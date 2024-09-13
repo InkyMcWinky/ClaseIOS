@@ -26,6 +26,7 @@ class ViewController: UIViewController {
     
     var botones_interfaz: Dictionary<String, IUBotonCalculadora> = [:]
     var operacion_actual: String? = nil
+    var numero_anterior: Double = 0.0
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -50,7 +51,11 @@ class ViewController: UIViewController {
         
         else if (estado_actual == estados_de_la_calculadora.escoger_operacion){
             if let _mensajero_id = sender.restorationIdentifier{
+                
                 operacion_actual = botones_interfaz[_mensajero_id]?.operacion
+                if let numero_actual: String = texto_a_cambiar.text{
+                    numero_anterior = Double(numero_actual)?0.0
+                }
                 estado_actual = estados_de_la_calculadora.seleccionar_numeros
             }
             else {
