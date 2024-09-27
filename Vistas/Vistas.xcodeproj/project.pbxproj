@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		FB2645C72CA46DEE0065896B /* Cita.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2645C62CA46DEE0065896B /* Cita.swift */; };
+		FB57E6912CA70EB0002ADC3D /* ControladorGeneradorCita.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB57E6902CA70EB0002ADC3D /* ControladorGeneradorCita.swift */; };
 		FBC59E202C9DCC0A00243A02 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC59E1F2C9DCC0A00243A02 /* AppDelegate.swift */; };
 		FBC59E222C9DCC0A00243A02 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC59E212C9DCC0A00243A02 /* SceneDelegate.swift */; };
 		FBC59E242C9DCC0A00243A02 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC59E232C9DCC0A00243A02 /* ViewController.swift */; };
@@ -40,6 +41,7 @@
 
 /* Begin PBXFileReference section */
 		FB2645C62CA46DEE0065896B /* Cita.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cita.swift; sourceTree = "<group>"; };
+		FB57E6902CA70EB0002ADC3D /* ControladorGeneradorCita.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControladorGeneradorCita.swift; sourceTree = "<group>"; };
 		FBC59E1C2C9DCC0A00243A02 /* Vistas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Vistas.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBC59E1F2C9DCC0A00243A02 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FBC59E212C9DCC0A00243A02 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -148,6 +150,7 @@
 			isa = PBXGroup;
 			children = (
 				FBC5C5AC2CA1C686005E9E61 /* ControladorPantallaCitas.swift */,
+				FB57E6902CA70EB0002ADC3D /* ControladorGeneradorCita.swift */,
 			);
 			path = Controladores;
 			sourceTree = "<group>";
@@ -286,6 +289,7 @@
 				FBC59E242C9DCC0A00243A02 /* ViewController.swift in Sources */,
 				FBC5C5AD2CA1C686005E9E61 /* ControladorPantallaCitas.swift in Sources */,
 				FB2645C72CA46DEE0065896B /* Cita.swift in Sources */,
+				FB57E6912CA70EB0002ADC3D /* ControladorGeneradorCita.swift in Sources */,
 				FBC5C5AF2CA1C6E9005E9E61 /* generador_de_citas.swift in Sources */,
 				FBC59E202C9DCC0A00243A02 /* AppDelegate.swift in Sources */,
 				FBC59E222C9DCC0A00243A02 /* SceneDelegate.swift in Sources */,
