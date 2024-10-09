@@ -13,6 +13,7 @@
 		FB0AB3E32CB4331C0046A685 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = FB0AB3E22CB4331C0046A685 /* Base */; };
 		FB0AB3E52CB4331C0046A685 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB0AB3E42CB4331C0046A685 /* Assets.xcassets */; };
 		FB0AB3E82CB4331C0046A685 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = FB0AB3E72CB4331C0046A685 /* Base */; };
+		FB5A10722CB6D8F800BFA4A6 /* posts.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5A10712CB6D8F800BFA4A6 /* posts.swift */; };
 		FBB76FE22CB4377300B8E249 /* ControladorPantallaPrincipalDeColeccion.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB76FE12CB4377300B8E249 /* ControladorPantallaPrincipalDeColeccion.swift */; };
 		FBB76FE42CB43D4800B8E249 /* VistaDeCelda.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB76FE32CB43D4800B8E249 /* VistaDeCelda.swift */; };
 /* End PBXBuildFile section */
@@ -45,6 +46,7 @@
 		FB0AB3E92CB4331C0046A685 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FB0AB3EE2CB4331C0046A685 /* Conecta_BaseTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Conecta_BaseTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB0AB3F82CB4331C0046A685 /* Conecta_BaseUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Conecta_BaseUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB5A10712CB6D8F800BFA4A6 /* posts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = posts.swift; sourceTree = "<group>"; };
 		FBB76FE12CB4377300B8E249 /* ControladorPantallaPrincipalDeColeccion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControladorPantallaPrincipalDeColeccion.swift; sourceTree = "<group>"; };
 		FBB76FE32CB43D4800B8E249 /* VistaDeCelda.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VistaDeCelda.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -107,9 +109,18 @@
 			path = Conecta_Base;
 			sourceTree = "<group>";
 		};
+		FB5A10702CB6D8D900BFA4A6 /* modelos */ = {
+			isa = PBXGroup;
+			children = (
+				FB5A10712CB6D8F800BFA4A6 /* posts.swift */,
+			);
+			path = modelos;
+			sourceTree = "<group>";
+		};
 		FBB76FDF2CB4369100B8E249 /* controladores_de_pantallas */ = {
 			isa = PBXGroup;
 			children = (
+				FB5A10702CB6D8D900BFA4A6 /* modelos */,
 				FBB76FE02CB436A900B8E249 /* Vista_de_Celdas */,
 			);
 			path = controladores_de_pantallas;
@@ -260,6 +271,7 @@
 				FBB76FE22CB4377300B8E249 /* ControladorPantallaPrincipalDeColeccion.swift in Sources */,
 				FB0AB3DE2CB4331C0046A685 /* SceneDelegate.swift in Sources */,
 				FBB76FE42CB43D4800B8E249 /* VistaDeCelda.swift in Sources */,
+				FB5A10722CB6D8F800BFA4A6 /* posts.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

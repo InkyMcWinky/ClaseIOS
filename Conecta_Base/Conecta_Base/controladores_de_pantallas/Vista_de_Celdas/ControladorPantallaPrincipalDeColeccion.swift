@@ -10,17 +10,39 @@ import UIKit
 private let IdentificadorDeCelda = "celda_pantalla_principal"
 
 class ControladorPantallaPrincipalDeColeccion: UICollectionViewController {
+    private var lista_de_publicaciones: [Publicacion] = []
+    private var url_de_publicaciones = "https://jsonplaceholder.typicode.com/posts"
+    private let identificador_de_celda = "celda_pantalla_principal"
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let ubicacion = URL(string: url_de_publicaciones)!
+        URLSession.shared.dataTask(with: ubicacion) {(datos, respuesta, error)
+            in do {
+                if let publicaciones_recibidas = datos {
+                    let prueba_de_interpretacion_de_datos = try
+                    JSONDecoder().decode([Publicacion].self, from: publicaciones_recibidas)
+                    DispatchQueue.maim.async{
+                        self.lista_de_publicaciones = prueba_de_interpretacion_de_datos
+                    }
+                    
+                }
+                else{
+                   print("No recibimos informacion")
+               }
+                
+               
+                
+            }
+            catch {
+                print("Error")
+            }
+            .resume()
+            
+        }
 
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Register cell classes
-        //self.collectionView!.register(UICollectionViewCell.self, forCellWithReuseIdentifier: IdentificadorDeCelda)
-
-        // Do any additional setup after loading the view.
+        
     }
 
     /*
