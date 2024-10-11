@@ -4,8 +4,9 @@
 //
 //  Created by alumno on 10/9/24.
 //
+import UIKit
 
-struct Publicacion: codable{
+struct Publicacion: Codable{
     
     //Decodable: Permitir informacion json a un modelo de swift
     
