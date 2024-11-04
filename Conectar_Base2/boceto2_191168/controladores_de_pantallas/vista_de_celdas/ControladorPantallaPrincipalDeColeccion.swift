@@ -98,6 +98,13 @@ class ControladorPantallaPrincipalDeColeccion: UICollectionViewController {
         //print(self.navigationController)
     }
     
+    override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cuerpo: VistaDeComentario = collectionView.dequeueReusableCell(withReuseIdentifier: identificador_de_celda, for: indexPath) as! VistaDeComentario
+        
+        
+        
+        
+         
     // MARK: UICollectionViewDelegate
     
     /*
